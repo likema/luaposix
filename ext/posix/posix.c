@@ -1757,13 +1757,16 @@ static void Fstat(lua_State *L, int i, const void *data)
 	case 10:
 		lua_pushstring(L, filetype(s->st_mode));
 		break;
+	case 11:
+		lua_pushstring(L, filetype(s->st_rdev));
+		break;
 	}
 }
 
 static const char *const Sstat[] =
 {
 	"mode", "ino", "dev", "nlink", "uid", "gid",
-	"size", "atime", "mtime", "ctime", "type",
+	"size", "atime", "mtime", "ctime", "type", "rdev",
 	NULL
 };
 
