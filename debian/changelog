@@ -1,3 +1,9 @@
+lua-posix (5.1.32-1) precise; urgency=low
+
+  * Merge from github upstream.
+
+ -- Like Ma <likemartinma@gmail.com>  Fri, 27 Jun 2014 16:51:54 +0800
+
 lua-posix (5.1.20-1) oneiric; urgency=low
 
   * Merge from github upstream.
